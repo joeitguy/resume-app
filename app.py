@@ -2,14 +2,18 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
-    return """
-    <h1>Joe Bodden's Career Kit</h1>
-    <ul>
-        <li><a href="/static/_jbodden resume.docx">Resume</a></li>
-        <li><a href="/static/_jbodden cover letter.docx">Cover Letter</a></li>
-        <li><a href="/static/_jbodden Technical Skills Summary.docx">Skills Summary</a></li>
-    </ul>
-    """
+@app.route('/')
+def home():
+    return render_template('index.html')
 
+@app.route('/view/resume')
+def view_resume():
+    return render_template('resume.html')
+
+@app.route('/view/cover-letter')
+def view_cover_letter():
+    return render_template('cover_letter.html')
+
+@app.route('/view/skills')
+def view_skills():
+    return render_template('skills.html')
