@@ -1,6 +1,17 @@
+<a href="{{ url_for('static', filename='docs/resume.docx') }}" download class="download-btn">📄 Resume (.docx)</a>
+
 <h2>HTML View in Browser</h2>
 <ul>
   <li><a href="/view/resume">Resume</a></li>
   <li><a href="/view/cover-letter">Cover Letter</a></li>
   <li><a href="/view/skills">Skills Summary</a></li>
+
+</ul>
+
+
+<h2>Download Documents</h2>
+<ul>
+  <li><a href="{{ url_for('static', filename='docs/resume.docx') }}" download>Download Resume (.docx)</a></li>
+  <li><a href="{{ url_for('static', filename='docs/cover_letter.docx') }}" download>Download Cover Letter (.docx)</a></li>
+  <li><a href="{{ url_for('static', filename='docs/skills_summary.docx') }}" download>Download Skills Summary (.docx)</a></li>
 </ul>
