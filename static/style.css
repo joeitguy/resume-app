@@ -73,3 +73,57 @@ body {
   width: 30%;
   color: #003366;
 }
+
+/* Container Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #f7f9fb;
+  color: #333;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+/* Header Section */
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+/* Contact Info */
+.contact {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
