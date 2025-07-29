@@ -149,3 +149,18 @@ h1 {
 .download-btn:hover {
   background-color: #005199;
 }
+
+.contact-info {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.contact-info .quote {
+  display: block;
+  margin-top: 0.5em;
+  font-style: italic;
+  color: #555;
+}
