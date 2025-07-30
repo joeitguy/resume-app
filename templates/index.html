@@ -1,44 +1,62 @@
-<h1 style="text-align: center;">Joseph W.P. Bodden Jr.</h1>
-<h2 style="text-align: center;">Integration &amp; Data Analytics Engineer | Application Support</h2>
-<div style="text-align: center;">
-  📧 <a href="mailto:joeitguy@gmail.com">joeitguy@gmail.com</a>
-  📞 (858) 225-0733
-  📍 San Diego, CA
-  🔗 <a href="https://linkedin.com/in/joeitguy" target="_blank" rel="noopener">joeitguy</a>
-</div>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+  }
 
+  .identity {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .link-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .link-box {
+    width: 45%;
+    text-align: left;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+</style>
+
+<h1>Joseph W.P. Bodden Jr.</h1>
+<h2>Integration &amp; Data Analytics Engineer | Application Support</h2>
+<p>📧 <a href="mailto:joeitguy@gmail.com">joeitguy@gmail.com</a> 📞 (858) 225-0733 📍 San Diego, CA 🔗 <a href="https://linkedin.com/in/joeitguy" target="_blank">joeitguy</a></p>
 <hr />
 
-<!-- ✨ Statement of Identity inserted below contact block -->
-<div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
-  <h3 style="margin-bottom: 10px;">🧠 Statement of Identity</h3>
-  <p style="max-width: 750px; margin: auto; font-size: 1.1em;">
+<div class="identity">
+  <h3>🧠 Statement of Identity</h3>
+  <p>
     <strong>
       I’m a battle-tested integration and data engineer who cut my teeth in SQL, hardened my edge in production support, and evolved into a full-stack builder obsessed with modular architecture and user-focused design. From servers to scripts, I’ve mapped systems inside-out—and now I deliver digital experiences with precision, resilience, and a dash of irreverent charm.
     </strong>
   </p>
 </div>
 
-<!-- Resume & Download Links stay below -->
-<table style="width: 100%;">
-  <tbody>
-    <tr>
-      <td style="width: 50%; vertical-align: top;">
-        <h3>HTML View in Browser</h3>
-        <ul>
-          <li><a href="/view/resume">Resume</a></li>
-          <li><a href="/view/cover-letter">Cover Letter</a></li>
-          <li><a href="/view/skills">Skills Summary</a></li>
-        </ul>
-      </td>
-      <td style="width: 50%; vertical-align: top;">
-        <h3>Download in .docx</h3>
-        <ul>
-          <li><a href="{{ url_for('static', filename='_jbodden resume.docx') }}" download>Download Resume (.docx)</a></li>
-          <li><a href="{{ url_for('static', filename='_jbodden cover letter.docx') }}" download>Download Cover Letter (.docx)</a></li>
-          <li><a href="{{ url_for('static', filename='_jbodden Technical Skills Summary.docx') }}" download>Download Skills Summary (.docx)</a></li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="link-section">
+  <div class="link-box">
+    <h3>HTML View in Browser</h3>
+    <ul>
+      <li><a href="/view/resume">Resume</a></li>
+      <li><a href="/view/cover-letter">Cover Letter</a></li>
+      <li><a href="/view/skills">Skills Summary</a></li>
+    </ul>
+  </div>
+  <div class="link-box">
+    <h3>Download in .docx</h3>
+    <ul>
+      <li><a href="{{ url_for('static', filename='_jbodden resume.docx') }}" download>Download Resume (.docx)</a></li>
+      <li><a href="{{ url_for('static', filename='_jbodden cover letter.docx') }}" download>Download Cover Letter (.docx)</a></li>
+      <li><a href="{{ url_for('static', filename='_jbodden Technical Skills Summary.docx') }}" download>Download Skills Summary (.docx)</a></li>
+    </ul>
+  </div>
+</div>
