@@ -69,3 +69,26 @@ ul li {
   list-style-type: none; /* removes the bullet */
   margin-left: 0;        /* resets indentation */
 }
+
+.skills-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.skills-table table {
+  border-collapse: collapse;
+  text-align: left;
+  width: auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff; /* Optional: matches your layout */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 10px 20px;
+  vertical-align: top;
+}
