@@ -13,70 +13,22 @@
     </strong>
   </p>
 </div>
-<div>
-    <div>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      height: 100vh;
-      font-family: sans-serif;
-      background-color: #f2f2f2;
-    }
 
-    .container {
-      display: flex;
-      gap: 50px;
-    }
-
-    .block {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .block h2 {
-      margin-bottom: 10px;
-    }
-
-    .block ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .block li {
-      margin: 6px 0;
-    }
-
-    .block a {
-      text-decoration: none;
-      color: #333;
-    }
-
-    .block a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="block">
-      <h2>HTML View in Browser</h2>
-      <ul>
-        <li><a href="/resume">Resume</a></li>
-        <li><a href="/cover-letter">Cover Letter</a></li>
-        <li><a href="/skills-summary">Skills Summary</a></li>
-      </ul>
-    </div>
-    <div class="block">
-      <h2>Download in .docx</h2>
-      <ul>
-        <li><a href="/downloads/resume.docx">Download Resume</a></li>
-        <li><a href="/downloads/cover-letter.docx">Download Cover Letter</a></li>
-        <li><a href="/downloads/skills-summary.docx">Download Skills Summary</a></li>
-      </ul>
-    </div>
+<div class="link-section">
+  <div class="link-box">
+    <h3>HTML View in Browser</h3>
+    <ul>
+      <li><a href="/view/resume">Resume</a></li>
+      <li><a href="/view/cover-letter">Cover Letter</a></li>
+      <li><a href="/view/skills">Skills Summary</a></li>
+    </ul>
   </div>
-
+  <div class="link-box">
+    <h3>Download in .docx</h3>
+    <ul>
+      <li><a href="{{ url_for('static', filename='_jbodden resume.docx') }}" download>Download Resume (.docx)</a></li>
+      <li><a href="{{ url_for('static', filename='_jbodden cover letter.docx') }}" download>Download Cover Letter (.docx)</a></li>
+      <li><a href="{{ url_for('static', filename='_jbodden Technical Skills Summary.docx') }}" download>Download Skills Summary (.docx)</a></li>
+    </ul>
+  </div>
+</div>
