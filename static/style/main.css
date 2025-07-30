@@ -1,9 +1,10 @@
 body {
+  border: 5px dashed hotpink;
   background-image: url("/static/images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
-  color: #fff; /* optional: makes text readable on dark backgrounds */
-  font-family: sans-serif; /* optional: smoother appearance */
+  color: #fff;
+  font-family: sans-serif;
 }
