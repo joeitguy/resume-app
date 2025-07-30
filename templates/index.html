@@ -1,34 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index Page</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      font-family: sans-serif;
+      background-color: #f2f2f2;
+    }
 
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-<h1>Joseph W.P. Bodden Jr.</h1>
-<h2>Integration &amp; Data Analytics Engineer | Application Support</h2>
-<p>📧 <a href="mailto:joeitguy@gmail.com">joeitguy@gmail.com</a> 📞 (858) 225-0733 📍 San Diego, CA 🔗 <a href="https://linkedin.com/in/joeitguy" target="_blank">joeitguy</a></p>
-<hr />
+    .container {
+      display: flex;
+      gap: 50px;
+    }
 
-<div class="identity">
-  <h3>🧠 Statement of Identity</h3>
-  <p>
-    <strong>
-      I’m a battle-tested integration and data engineer who cut my teeth in SQL, hardened my edge in production support, and evolved into a full-stack builder obsessed with modular architecture and user-focused design. From servers to scripts, I’ve mapped systems inside-out—and now I deliver digital experiences with precision, resilience, and a dash of irreverent charm.
-    </strong>
-  </p>
-</div>
+    .block {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
 
-<div class="link-section">
-  <div class="link-box">
-    <h3>HTML View in Browser</h3>
-    <ul>
-      <li><a href="/view/resume">Resume</a></li>
-      <li><a href="/view/cover-letter">Cover Letter</a></li>
-      <li><a href="/view/skills">Skills Summary</a></li>
-    </ul>
+    .block h2 {
+      margin-bottom: 10px;
+    }
+
+    .block ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .block li {
+      margin: 6px 0;
+    }
+
+    .block a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .block a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="block">
+      <h2>HTML View in Browser</h2>
+      <ul>
+        <li><a href="/resume">Resume</a></li>
+        <li><a href="/cover-letter">Cover Letter</a></li>
+        <li><a href="/skills-summary">Skills Summary</a></li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Download in .docx</h2>
+      <ul>
+        <li><a href="/downloads/resume.docx">Download Resume</a></li>
+        <li><a href="/downloads/cover-letter.docx">Download Cover Letter</a></li>
+        <li><a href="/downloads/skills-summary.docx">Download Skills Summary</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="link-box">
-    <h3>Download in .docx</h3>
-    <ul>
-      <li><a href="{{ url_for('static', filename='_jbodden resume.docx') }}" download>Download Resume (.docx)</a></li>
-      <li><a href="{{ url_for('static', filename='_jbodden cover letter.docx') }}" download>Download Cover Letter (.docx)</a></li>
-      <li><a href="{{ url_for('static', filename='_jbodden Technical Skills Summary.docx') }}" download>Download Skills Summary (.docx)</a></li>
-    </ul>
-  </div>
-</div>
+</body>
+</html>
