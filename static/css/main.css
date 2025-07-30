@@ -64,3 +64,8 @@ body > * {
   display: inline-block;
   margin-left: 20px; /* Optional: gives the bullets a bit of breathing room */
 }
+
+ul li {
+  list-style-type: none; /* removes the bullet */
+  margin-left: 0;        /* resets indentation */
+}
