@@ -24,3 +24,15 @@ body > * {
   z-index: 1; /* bring content above the overlay */
 }
 
+.link-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  margin-top: 30px;
+}
+
+.link-box {
+  min-width: 250px;
+  padding: 20px;
+}
