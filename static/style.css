@@ -189,7 +189,7 @@ li {
 }
 
 body {
-  background-image: url('/static/images/bg.jpg');
+  background-image: url('/static/images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
