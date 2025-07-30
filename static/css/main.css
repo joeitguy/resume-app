@@ -53,3 +53,14 @@ body > * {
 .social-links a:hover {
   text-decoration: underline;
 }
+
+.section ul {
+  text-align: left;
+  display: inline-block; /* keeps it from stretching full width if needed */
+}
+
+.link-section ul {
+  text-align: left;
+  display: inline-block;
+  margin-left: 20px; /* Optional: gives the bullets a bit of breathing room */
+}
