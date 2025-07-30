@@ -1,6 +1,6 @@
 body {
   position: relative;
-  background-image: url("/static/images/bg_marble.png"); /* replace with your image path */
+  background-image: url("/static/images/bg.png"); /* replace with your image path */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
