@@ -1,0 +1,115 @@
+body {
+  position: relative;
+  background-image: url("/static/images/bg.png"); /* replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  color: #070707;
+  font-family: sans-serif;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.5); /* light overlay */
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1; /* bring content above the overlay */
+}
+
+.link-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap; /* allows stacking on small screens */
+  margin-top: 30px;
+}
+
+.link-box {
+  min-width: 250px;
+  padding: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.section ul {
+  text-align: left;
+  display: inline-block; /* keeps it from stretching full width if needed */
+}
+
+.link-section ul {
+  text-align: left;
+  display: inline-block;
+  margin-left: 20px; /* Optional: gives the bullets a bit of breathing room */
+}
+
+ul li {
+  list-style-type: none; /* removes the bullet */
+  margin-left: 0;        /* resets indentation */
+}
+
+.skills-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.skills-table table {
+  border-collapse: collapse;
+  text-align: left;
+  width: auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 10px 20px;
+  vertical-align: top;
+}
+
+.skills-table table {
+  border-collapse: collapse;
+  width: auto;
+  text-align: left;
+}
+
+.skills-table th,
+.skills-table td {
+  border: 1px solid #333; /* You can lighten it to #888 or #ccc if needed */
+  padding: 10px 20px;
+  vertical-align: top;
+}
+
+.resume-section {
+  text-align: left;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+}
