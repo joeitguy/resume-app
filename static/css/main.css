@@ -119,6 +119,7 @@ ul li {
   max-width: 800px;
   padding: 2rem;
   text-align: left;
-  border-top: 2px solid #ccc;  /* Optional: visual separation */
+  border-top: 2px solid #ccc;
   margin-top: 2rem;
+  /* background-color: #fff; ← REMOVE THIS */
 }
