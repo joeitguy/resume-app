@@ -115,10 +115,10 @@ ul li {
 }
 
 .resume-details {
-  margin: 0 auto;              /* Center the block horizontally */
-  max-width: 800px;            /* Keep it readable */
-  padding: 2rem;               /* Add breathing room */
-  text-align: left;            /* Left-align the internal text */
-  background-color: #fff;      /* Optional: match resume background */
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+  text-align: left;
+  border-top: 2px solid #ccc;  /* Optional: visual separation */
+  margin-top: 2rem;
 }
-
