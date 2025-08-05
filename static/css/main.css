@@ -113,3 +113,12 @@ ul li {
   line-height: 1.6;
   font-family: 'Segoe UI', sans-serif;
 }
+
+.resume-details {
+  margin: 0 auto;              /* Center the block horizontally */
+  max-width: 800px;            /* Keep it readable */
+  padding: 2rem;               /* Add breathing room */
+  text-align: left;            /* Left-align the internal text */
+  background-color: #fff;      /* Optional: match resume background */
+}
+
