@@ -79,8 +79,8 @@ ul li {
 .skills-table table {
   border-collapse: collapse;
   text-align: left;
-  width: auto;
-  max-width: 800px;
+  width: 100%; /* Stretch to container */
+  max-width: 800px; /* Prevent overflow */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -88,22 +88,12 @@ ul li {
 
 .skills-table th,
 .skills-table td {
+  border: 1px solid #333;
   padding: 10px 20px;
   vertical-align: top;
 }
 
-.skills-table table {
-  border-collapse: collapse;
-  width: auto;
-  text-align: left;
-}
 
-.skills-table th,
-.skills-table td {
-  border: 1px solid #333; /* You can lighten it to #888 or #ccc if needed */
-  padding: 10px 20px;
-  vertical-align: top;
-}
 
 .resume-section {
   text-align: left;
