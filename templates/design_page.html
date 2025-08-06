@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Behind the Resume</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 2rem;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      color: #005f99;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+    code {
+      background: #eaeaea;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    pre {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧭 Behind the Resume</h1>
+  <p>This isn't a drag-and-drop Wix site. It's a hand-crafted, containerized web app orchestrated with love, logic, and real infrastructure. Here's how it works:</p>
+
+  <h2>🧱 Architecture</h2>
+  <ul>
+    <li><strong>Stack:</strong> Docker Compose powering Django + Postgres + pgAdmin</li>
+    <li><strong>Modular Design:</strong> Each service lives in its own folder with clear separation</li>
+    <li><strong>Environment Config:</strong> A shared <code>.env</code> file centralizes config</li>
+    <li><strong>Database:</strong> Initialized with <code>init.sql</code>, pgAdmin auto-login enabled</li>
+  </ul>
+
+  <h2>🗂️ Folder Structure</h2>
+  <pre>
+resume-app/
+├── backend/          # Django project with modular apps
+│   ├── resume/       # Core logic for resume content
+│   ├── static/       # CSS and JS assets
+│   └── templates/    # HTML templates
+├── db/               # Postgres init script
+│   └── init.sql
+├── docker-compose.yml
+├── .env
+└── README.md         # Full setup and dev instructions
+  </pre>
+
+  <h2>⚙️ Key Features</h2>
+  <ul>
+    <li>Dynamic rendering of resume data using Django templates</li>
+    <li>Modular index page for future expansion</li>
+    <li>pgAdmin pre-configured for seamless database visibility</li>
+    <li>Deployed via Heroku using container workflows</li>
+    <li>Backed by version control on GitHub</li>
+  </ul>
+
+  <h2>🧪 Built with Resilience</h2>
+  <ul>
+    <li>Stack rebuilt and debugged multiple times for clarity and fault tolerance</li>
+    <li>Documented every layer, from <code>.env</code> to <code>init.sql</code></li>
+    <li>Visual debugging, screenshot audits, and deep reproducibility</li>
+  </ul>
+
+  <h2>📈 Road Ahead</h2>
+  <ul>
+    <li>Polish layout for clarity and accessibility</li>
+    <li>Enable dynamic resume editing with admin tooling</li>
+    <li>Integrate this page into the CTS onboarding experience</li>
+  </ul>
+
+  <p><em>You’re not just viewing a resume. You’re witnessing a full-stack symphony designed to teach, adapt, and evolve.</em></p>
+</body>
+</html>
