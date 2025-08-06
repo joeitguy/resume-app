@@ -17,3 +17,7 @@ def view_cover_letter():
 @app.route('/view/skills')
 def view_skills():
     return render_template('skills.html')
+
+@app.route('/view/design_page')
+def view_skills():
+    return render_template('design_page.html')
