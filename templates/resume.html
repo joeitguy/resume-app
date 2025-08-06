@@ -1,90 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joseph W.P. Bodden Jr. Resume</title>
-  <link rel="stylesheet" href="resume.css" />
+  <p><a href="/">← Back to Home</a></p>
+  <title>Resume - Joseph W.P. Bodden Jr.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-  <div class="container">
-    <h1>Joseph W.P. Bodden Jr.</h1>
-    <h2>Integration & Data Analytics Engineer | Application Support</h2>
+  
+  <h1>Joseph W.P. Bodden Jr.</h1>
+  <h2>Integration & Data Analytics Engineer | Application Support</h2>
 
-    <div class="contact">
-      <p><strong>Email:</strong> <a href="mailto:joeitguy@gmail.com">joeitguy@gmail.com</a> |
-         <strong>Phone:</strong> (858) 225-0733 |
-         <strong>Location:</strong> San Diego, CA |
-         <strong>GitHub:</strong> <a href="#">joe-bodden</a></p>
+
+    <div class="contact-info">
+      <span>📧 <a href="mailto:joeitguy@gmail.com">joeitguy@gmail.com</a></span>
+      <span>📞 (858) 225-0733</span>
+      <span>📍 San Diego, CA</span>
+      <div class="social-links">
+  <a href="https://www.linkedin.com/in/joe-bodden/" target="_blank">🔗 LinkedIn</a>
+  <a href="https://github.com/joeitguy" target="_blank">💻 GitHub</a>
+  <a href="https://verify.openedg.org/?id=6ofw.4JrC.7zxc" target="_blank">🎓 Python Certification</a>
+</div>
     </div>
+  </div>
+<div class="skills-table">
+<table>
+<tbody>
+<tr>
+<th style="text-align: left;">Languages</th>
+<td>Python, T-SQL, JQL</td>
+</tr>
+<tr>
+<th style="text-align: left;">Tools &amp; IDEs</th>
+<td>SSMS, Visual Studio, PGAdmin, Flask, Splunk, Colab</td>
+</tr>
+<tr>
+<th>DevOps &amp; Admin</th>
+<td>Docker, Server Admin, AD, Atlassian, Heroku, Jupyter</td>
+</tr>
+<tr>
+<th>Reporting &amp; ETL</th>
+<td>SSRS, SSIS, PowerShell, ER Diagrams, Data Viz</td>
+</tr>
+<tr>
+<th style="text-align: left;">Additional Skills</th>
+<td>Jira, DB Admin, Troubleshooting, Documentation</td>
+</tr>
+</tbody>
+</table>
+</div>
+  <div class="resume-details">
 
-    <table>
-      <tr><th>Languages</th><td>Python, T-SQL, JQL</td></tr>
-      <tr><th>Tools & IDEs</th><td>SSMS, Visual Studio, PGAdmin, Flask, Splunk, Colab</td></tr>
-      <tr><th>DevOps & Admin</th><td>Docker, Server Admin, AD, Atlassian, Heroku, Jupyter Notebooks</td></tr>
-      <tr><th>Reporting & ETL</th><td>SSRS, SSIS, PowerShell, ER Diagrams, Data Visualization</td></tr>
-      <tr><th>Additional Skills</th><td>Jira, Database Admin, Troubleshooting, Documentation</td></tr>
-    </table>
 
     <h3>Professional Experience</h3>
 
-    <div class="job">
-      <h4>Integration Support Analyst</h4>
-      <p><em>Vistage Worldwide, Inc.</em> • Sep 2018 – Mar 2025</p>
-      <ul>
-        <li>Resolved 95% of issues using T-SQL, Jira, and Splunk, reducing incident response by 35%</li>
-        <li>Automated cross-product reporting pipelines to trace and fix multi-system inconsistencies</li>
-        <li>Built SSRS dashboards and Python scripts to empower stakeholders with real-time insights</li>
-      </ul>
-    </div>
+    <h4>Integration Support Analyst, Vistage Worldwide, Inc. <em>(Sep 2018 – Mar 2025)</em></h4>
+    <ul>
+      <li>Resolved 95% of issues using T-SQL, Jira, and Splunk, reducing incident response by 35%</li>
+      <li>Automated cross-product reporting pipelines to trace and fix multi-system inconsistencies</li>
+      <li>Built SSRS dashboards and Python scripts to empower stakeholders with real-time insights</li>
+    </ul>
 
-    <div class="job">
-      <h4>Data Reporting Analyst</h4>
-      <p><em>Pala Casino Spa & Resort</em> • Mar 2017 – Sep 2018</p>
-      <ul>
-        <li>Designed and maintained SSRS-based automated reporting solutions</li>
-        <li>Developed ad-hoc MSSQL queries and Excel models to detect data anomalies</li>
-        <li>Collaborated with business teams to refine definitions and key metrics</li>
-      </ul>
-    </div>
+    <h4>Data Reporting Analyst, Pala Casino Spa & Resort <em>(Mar 2017 – Sep 2018)</em></h4>
+    <ul>
+      <li>Designed and maintained SSRS-based automated reporting solutions</li>
+      <li>Developed ad-hoc MSSQL queries and Excel models to detect data anomalies</li>
+      <li>Collaborated with business teams to refine definitions and key metrics</li>
+    </ul>
 
-    <div class="job">
-      <h4>Senior Systems Analyst</h4>
-      <p><em>Jackson Rancheria Casino</em> • Nov 2012 – Sep 2017</p>
-      <ul>
-        <li>Managed and supported core gaming systems, ensuring 99.9% uptime</li>
-        <li>Diagnosed and resolved data-related issues to maintain reporting accuracy</li>
-        <li>Documented workflows and led peer-training sessions on best practices</li>
-      </ul>
-    </div>
-<div class="job">
-  <h4>Level II Database Support Engineer</h4>
-  <p><em>Aristocrat Technologies, Las Vegas, NV</em> • Oct 2006 – Oct 2011</p>
-  <ul>
-    <li>Managed 150+ client SQL gaming databases, analyzing data derivation, source, and formulas</li>
-    <li>Developed, documented, and trained teams on application, server, and network requirements</li>
-    <li>Led project management for internal/external users and third-party vendors; reported costs, schedules, and proposed system improvements</li>
-    <li>Procured hardware/software quotes to boost productivity, security, and SLA compliance</li>
-    <li>Administered Microsoft SQL Server (2000–2008 R2): performance audits, custom stored procedures, backup strategies, PowerShell automation</li>
-    <li>Analyzed defect patterns, built automation frameworks, and conducted code reviews</li>
-    <li>Prioritized bug fixes and supported server patching for Microsoft Server 2008/R2</li>
-    <li>Created test cases, proactively reviewed test plans, and documented CI and code coverage best practices</li>
-    <li>Designed and integrated custom communication protocols (TCP/IP, RS-232, RS-485, USB)</li>
-    <li>Planned, coded, tested, and trained junior engineers in foundational software engineering practices</li>
-    <li>Liaised with engineering, marketing, and sales teams; led small engineering teams through project planning and delivery</li>
-  </ul>
-</div>
+    <h4>Senior Systems Analyst, Jackson Rancheria Casino <em>(Nov 2012 – Sep 2017)</em></h4>
+    <ul>
+      <li>Managed and supported core gaming systems, ensuring 99.9% uptime</li>
+      <li>Diagnosed and resolved data-related issues to maintain reporting accuracy</li>
+      <li>Documented workflows and led peer-training sessions on best practices</li>
+    </ul>
 
     <h3>Military Service</h3>
-    <p><strong>United States Navy — Corpsman (E-3)</strong>, 1993 – 1995<br>Honorable Service</p>
+    <p>United States Navy — Corpsman (E-3), 1993–1995<br>
+       Honorable Service</p>
 
     <h3>Education</h3>
-    <p><strong>American InterContinental University</strong>, AS in Business Administration & Management (2009–2011)<br>
-       <strong>Nucamp</strong>, DevOps Specialization (Backend, SQL & Python), 2025</p>
+    <ul>
+      <li>AS in Business Administration & Management — American InterContinental University (2009–2011)</li>
+      <li>DevOps Specialization — Nucamp (2025)</li>
+    </ul>
 
     <h3>Certifications</h3>
-    <p>PCEP™ – Certified Entry-Level Python Programmer (2025)<br>
-       <a href="https://verify.openedg.org/?id=6ofw.4JrC.7zxc">Verification Link</a></p>
+    <ul>
+      <li>PCEP™ – Certified Entry-Level Python Programmer (2025)</li>
+      <li>Verification: <a href="https://verify.openedg.org/?id=6ofw.4JrC.7zxc" target="_blank">View Certificate</a></li>
+    </ul>
+
+    <hr />
+    <p><a href="/">← Back to Home</a></p>
+
   </div>
+
 </body>
 </html>
+
