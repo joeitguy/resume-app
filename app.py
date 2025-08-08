@@ -21,3 +21,7 @@ def view_skills():
 @app.route('/view/design_page')
 def view_design_page():
     return render_template('design_page.html')
+
+@app.route('/view/badges')
+def view_badges():
+    return render_template('badges.html')
