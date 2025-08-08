@@ -157,12 +157,8 @@ ul li {
 }
 
 .badge-row img {
-  width: 425px; /* 4x bigger than typical badge size */
+  width: 500px; 
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-.badge-row img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
 }
