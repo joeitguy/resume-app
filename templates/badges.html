@@ -56,8 +56,8 @@
   <div class="section">
     <h2>Alteryx</h2>
     <div class="badge-grid grid-2">
-      <div class="badge"><img src="tryx1.png" alt="Alteryx Badge 1"></div>
-      <div class="badge"><img src="tryx2.png" alt="Alteryx Badge 2"></div>
+      <div class="badge"><img src="{{ url_for('static', filename='badges/tryx1.png') }}"></div>
+      <div class="badge"><img src="{{ url_for('static', filename='badges/tryx2.png') }}"></div>
     </div>
   </div>
 
@@ -79,7 +79,7 @@
     <div class="badge"><img src="{{ url_for('static', filename='badges/nc10.png') }}"></div>
   </div>
 </div>
-
+<h2>Nucamp</h2>
     <div class="badge-grid grid-5">
       <div class="badge"><img src="nc6.png"></div>
       <div class="badge"><img src="nc7.png"></div>
@@ -93,42 +93,11 @@
   <div class="section">
     <h2>Salesforce</h2>
     <div class="badge-grid grid-6">
-      <div class="badge"><img src="sf1.png" alt="Salesforce Badge 1"></div>
-      <div class="badge"><img src="sf2.png" alt="Salesforce Badge 2"></div>
-      <div class="badge"><img src="sf3.png" alt="Salesforce Badge 3"></div>
-      <div class="badge"><img src="sf4.png" alt="Salesforce Badge 4"></div>
-      <div class="badge"><img src="sf5.png" alt="Salesforce Badge 5"></div>
-      <div class="badge"><img src="sf6.png" alt="Salesforce Badge 6"></div>
+      {% for i in range(1, 27) %}
+        <div class="badge"><img src="{{ url_for('static', filename='badges/sf' ~ i ~ '.png') }}"></div>
+        {% if i % 6 == 0 and i != 26 %}
     </div>
-    <div class="badge-grid grid-6">
-      <div class="badge"><img src="sf7.png" alt="Salesforce Badge 7"></div>
-      <div class="badge"><img src="sf8.png" alt="Salesforce Badge 8"></div>
-      <div class="badge"><img src="sf9.png" alt="Salesforce Badge 9"></div>
-      <div class="badge"><img src="sf10.png" alt="Salesforce Badge 10"></div>
-      <div class="badge"><img src="sf11.png" alt="Salesforce Badge 11"></div>
-      <div class="badge"><img src="sf12.png" alt="Salesforce Badge 12"></div>
-    </div>
-    <div class="badge-grid grid-6">
-      <div class="badge"><img src="sf13.png" alt="Salesforce Badge 13"></div>
-      <div class="badge"><img src="sf14.png" alt="Salesforce Badge 14"></div>
-      <div class="badge"><img src="sf15.png" alt="Salesforce Badge 15"></div>
-      <div class="badge"><img src="sf16.png" alt="Salesforce Badge 16"></div>
-      <div class="badge"><img src="sf17.png" alt="Salesforce Badge 17"></div>
-      <div class="badge"><img src="sf18.png" alt="Salesforce Badge 18"></div>
-    </div>
-    <div class="badge-grid grid-6">
-      <div class="badge"><img src="sf19.png" alt="Salesforce Badge 19"></div>
-      <div class="badge"><img src="sf20.png" alt="Salesforce Badge 20"></div>
-      <div class="badge"><img src="sf21.png" alt="Salesforce Badge 21"></div>
-      <div class="badge"><img src="sf22.png" alt="Salesforce Badge 22"></div>
-      <div class="badge"><img src="sf23.png" alt="Salesforce Badge 23"></div>
-      <div class="badge"><img src="sf24.png" alt="Salesforce Badge 24"></div>
-    </div>
-    <div class="badge-grid grid-6">
-      <div class="badge"><img src="sf25.png" alt="Salesforce Badge 25"></div>
-      <div class="badge"><img src="sf26.png" alt="Salesforce Badge 26"></div>
-    </div>
-  </div>
+
 
 </body>
 </html>
