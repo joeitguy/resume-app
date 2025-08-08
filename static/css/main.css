@@ -26,6 +26,9 @@ body > * {
 h2, .badge-label {
   color: #333;
   font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: larger;
 }
 
 .section h2 {
