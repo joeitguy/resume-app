@@ -133,29 +133,32 @@ ul li {
 }
 
 /* === Badge Grid === */
-.badge-grid {
-  display: inline-grid;
-  gap: 10px;
-  justify-content: center;
-}
-
-
-/*
-.badge {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  overflow: hidden;
+.badge-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 40px;
 }
 
-.badge img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.badge-page h2 {
+  font-size: 2rem;
+  margin: 30px 0 20px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
 }
-  */
+
+.badge-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.badge-row img {
+  width: 400px; /* 4x bigger than typical badge size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}

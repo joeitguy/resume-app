@@ -1,86 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Badge Showcase</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .badge-grid {
-      display: grid;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .grid-2 { grid-template-columns: repeat(2, 120px); }
-    .grid-5 { grid-template-columns: repeat(5, 120px); }
-    .grid-6 { grid-template-columns: repeat(6, 120px); }
-
-    .badge {
-      width: 120px;
-      height: 120px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .badge img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Section 1: Alteryx -->
-  <div class="section">
-    <div class="badge-label">Alteryx</div>    
-    <div class="badge-grid grid-2">
-      <div class="badge"><img src="{{ url_for('static', filename='badges/altx1.png') }}"></div>
-    </div>
+<div class="badge-page">
+  <h2>Alteryx</h2>
+  <div class="badge-row">
+    <img src="{{ url_for('static', filename='badges/alteryx.png') }}">
   </div>
 
-  <!-- Section 2: Nucamp -->
-  <div class="section">
-    <div class="badge-label">Nucamp</div>
+  <h2>Nucamp</h2>
+  <div class="badge-row">
+    <img src="{{ url_for('static', filename='badges/nucamp.png') }}">
+  </div>
 
-        <div class="badge-grid grid-5">
-            <div class="badge"><img src="{{ url_for('static', filename='badges/nc1.png') }}"></div>
-        </div>
- 
-
+  <h2>Salesforce</h2>
+  <div class="badge-row">
+    <img src="{{ url_for('static', filename='badges/sf1.png') }}">
+    <img src="{{ url_for('static', filename='badges/sf2.png') }}">
   </div>
 </div>
-
-  <!-- Section 3: Salesforce -->
-  <div class="section">
-    <div class="badge-label">Salesforce</div>
-
-        <div class="badge-grid grid-5">
-            <div class="badge"><img src="{{ url_for('static', filename='badges/sf1.png') }}"></div>
-            <div class="badge"><img src="{{ url_for('static', filename='badges/sf2.png') }}"></div>
-        </div>
-
-
-</body>
-</html>
