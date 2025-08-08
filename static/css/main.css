@@ -157,7 +157,7 @@ ul li {
 }
 
 .badge-row img {
-  width: 350px; /* 4x bigger than typical badge size */
+  width: 425px; /* 4x bigger than typical badge size */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
