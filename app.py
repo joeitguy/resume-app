@@ -1,8 +1,14 @@
 from flask import Flask, send_from_directory, render_template
 import os
 import json
+from resume.routes import resume_bp
 
 app = Flask(__name__)
+app.register_blueprint(resume_bp)
+
+if __name__ == '__main__':
+    app.run()
+
 
 # 📁 Paths
 DOCS_DIR = os.path.abspath("docs")  # Adjust if needed
@@ -67,8 +73,3 @@ def serve_resume_meta():
 from flask import Flask
 from resume.routes import resume_bp
 
-app = Flask(__name__)
-app.register_blueprint(resume_bp)
-
-if __name__ == '__main__':
-    app.run()
