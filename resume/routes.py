@@ -26,9 +26,7 @@ import os
 
 app = Flask(__name__, static_folder="client/build")
 
-@app.route("/")
-def serve_index():
-    return send_from_directory(app.static_folder, "index.html")
+
 
 @app.route("/<path:path>")
 def serve_static(path):
@@ -40,3 +38,6 @@ from flask import send_from_directory
 def serve_resume(filename):
     return send_from_directory("static", filename)
 
+@app.route("/")
+def serve_index():
+    return send_from_directory(app.static_folder, "index.html")
