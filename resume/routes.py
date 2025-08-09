@@ -34,3 +34,9 @@ def serve_index():
 def serve_static(path):
     return send_from_directory(app.static_folder, path)
 
+from flask import send_from_directory
+
+@app.route("/resume_api/<filename>")
+def serve_resume(filename):
+    return send_from_directory("static/images", filename)
+
