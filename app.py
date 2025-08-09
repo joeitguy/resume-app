@@ -1,5 +1,6 @@
 from flask import Flask, send_from_directory, render_template
 import os
+import json
 
 app = Flask(__name__)
 
@@ -52,3 +53,14 @@ def ping():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+@app.route("/api/resume/meta")
+def serve_resume_meta():
+    with open("static/resume_meta.json") as f:
+        data = json.load(f)
+    return data
+
+
+
