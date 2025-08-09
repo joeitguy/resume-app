@@ -11,3 +11,16 @@ def get_resume_meta():
         return jsonify(data)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+    import os
+from flask import jsonify
+
+@app.route('/api/resume/meta')
+def resume_meta():
+    path = os.path.join(os.path.dirname(__file__), 'resume_meta.json')
+    try:
+        with open(path) as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)})
