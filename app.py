@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, render_template, routes 
+from flask import Flask, send_from_directory, render_template
 import os
 import json
 from resume.routes import resume_bp
