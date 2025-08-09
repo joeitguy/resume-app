@@ -1,6 +1,5 @@
-import os
-import json
 from flask import Blueprint, jsonify
+import os, json
 
 resume_bp = Blueprint('resume', __name__, url_prefix='/api/resume')
 
