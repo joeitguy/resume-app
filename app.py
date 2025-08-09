@@ -3,18 +3,20 @@ import os
 import json
 
 from resume.routes import resume_bp
+app = Flask(__name__)
+app.register_blueprint(resume_bp)
+
 
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(resume_bp)
     return app
 
-app = Flask(__name__)
-app.register_blueprint(resume_bp)
+
 
 if __name__ == '__main__':
     app.run()
-from resume import create_app
+
 
 
 
@@ -65,10 +67,6 @@ def view_design():
 def ping():
     return {"status": "ok"}
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
-
 
 @app.route("/api/resume/meta")
 def serve_resume_meta():
@@ -77,7 +75,4 @@ def serve_resume_meta():
     return data
 
 
-
-from flask import Flask
-from resume.routes import resume_bp
 
