@@ -1,13 +1,14 @@
-from flask import Flask, send_from_directory, render_template
+from flask import Flask, send_from_directory, render_template, routes 
 import os
 import json
 from resume.routes import resume_bp
-
 app = Flask(__name__)
 app.register_blueprint(resume_bp)
 
 if __name__ == '__main__':
     app.run()
+from resume import create_app
+app = create_app()
 
 
 # 📁 Paths
