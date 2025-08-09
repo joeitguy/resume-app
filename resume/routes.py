@@ -36,15 +36,7 @@ def serve_static(path):
 
 from flask import send_from_directory
 
-@app.route("/resume/<jbodden_resume.docx>")
+@app.route("/static/<path:filename>")
 def serve_resume(filename):
-    return send_from_directory("static/images", filename)
-
-@app.route("/resume/<jbodden_cover_letter.docx>")
-def serve_resume(filename):
-    return send_from_directory("static/images", filename)
-
-@app.route("/resume/<jbodden_cover_letter.docx>")
-def serve_resume(filename):
-    return send_from_directory("static/images", filename)
+    return send_from_directory("static", filename)
 

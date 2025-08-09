@@ -6,17 +6,17 @@
   },
   {
     "filename": "jbodden_cover_letter.docx",
-    "url": "resume/static/jbodden_cover_letter.docx",
+    "url": "/static/jbodden_cover_letter.docx",
     "last_updated": "2025-08-08"
   },
   {
     "filename": "jbodden_resume.docx",
-    "url": "resume/static/jbodden_resume.docx",
+    "url": "/static/jbodden_resume.docx",
     "last_updated": "2025-08-08"
   },
   {
     "filename": "jbodden_Technical_Skills.docx",
-    "url": "resume/static/jbodden_Technical_Skills.docx",
+    "url": "/static/jbodden_Technical_Skills.docx",
     "last_updated": "2025-08-08"
   }
 ]
