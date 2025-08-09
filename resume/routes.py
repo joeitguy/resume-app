@@ -1,19 +1,10 @@
+import os
+import json
 from flask import Blueprint, jsonify
-import os, json
 
+resume_bp = Blueprint("resume", __name__, url_prefix="/api/resume")
 
-resume_bp = Blueprint('resume', __name__, url_prefix='/api/resume')
-
-def create_app():
-    app = Flask(__name__)
-    app.register_blueprint(resume_bp)
-    print("[✔] Resume blueprint registered.")
-    return app
-
-
-
-
-@resume_bp.route('/meta', methods=['GET'])
+@resume_bp.route("/meta", methods=["GET"])
 def get_resume_meta():
     try:
         path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resume_meta.json'))
@@ -24,3 +15,9 @@ def get_resume_meta():
         return jsonify({"error": "resume_meta.json not found"}), 404
     except json.JSONDecodeError:
         return jsonify({"error": "Invalid JSON format"}), 500
+    
+@resume_bp.route("/health", methods=["GET"])
+def health_check():
+    print("[DEBUG] /health route hit")
+    return jsonify({"status": "ok"}), 200
+

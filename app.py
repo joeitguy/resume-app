@@ -1,6 +1,8 @@
 from flask import Flask, send_from_directory, render_template
 import os
 import json
+from resume import resume_bp
+
 
 from resume.routes import resume_bp
 app = Flask(__name__)
