@@ -1,7 +1,17 @@
 from flask import Blueprint, jsonify
 import os, json
 
+
 resume_bp = Blueprint('resume', __name__, url_prefix='/api/resume')
+
+def create_app():
+    app = Flask(__name__)
+    app.register_blueprint(resume_bp)
+    print("[✔] Resume blueprint registered.")
+    return app
+
+
+
 
 @resume_bp.route('/meta', methods=['GET'])
 def get_resume_meta():
