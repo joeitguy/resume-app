@@ -1,7 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, send_file, jsonify
+import os
 
 app = Flask(__name__)
 
+# HTML routes
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -26,28 +28,20 @@ def view_design_page():
 def view_badges():
     return render_template('badges.html')
 
-from flask import Flask, request, send_file, jsonify
-import os
-
-app = Flask(__name__)
-
-# GET resume
+# File routes
 @app.route('/resume', methods=['GET'])
 def get_resume():
-    return send_file('static/templates/resume.docx', mimetype='application/docx')
+    return send_file('static/templates/resume.docx', mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
 
-# GET cover letter (optional)
 @app.route('/cover_letter', methods=['GET'])
 def get_coverletter():
-    return send_file('static/templates/coverletter.docx', mimetype='application/docx')
+    return send_file('static/templates/cover_letter.docx', mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
 
-# GET Skills (optional)
 @app.route('/skills', methods=['GET'])
-def get_coverletter():
-    return send_file('static/templates/skills.docx', mimetype='application/docx')
+def get_skills():
+    return send_file('static/templates/skills.docx', mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
 
-
-# PUT badge image
+# Badge image routes
 @app.route('/badges/<badge_id>/image', methods=['PUT'])
 def upload_badge_image(badge_id):
     image = request.files['image']
@@ -55,7 +49,6 @@ def upload_badge_image(badge_id):
     image.save(path)
     return jsonify({'status': 'uploaded', 'path': path})
 
-# DELETE badge image
 @app.route('/badges/<badge_id>/image', methods=['DELETE'])
 def delete_badge_image(badge_id):
     path = f'static/badges/{badge_id}.png'
@@ -64,7 +57,6 @@ def delete_badge_image(badge_id):
         return jsonify({'status': 'deleted'})
     return jsonify({'error': 'Badge not found'}), 404
 
-# GET all badge filenames
 @app.route('/badges', methods=['GET'])
 def list_badges():
     files = os.listdir('static/badges')
