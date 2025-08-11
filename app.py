@@ -1,16 +1,15 @@
-from flask import Flask, send_from_directory, render_template
+from flask import Flask, render_template
 from resume.routes import resume_bp
 
-app = Flask(__name__, template_folder="static/templates")
+app = Flask(
+    __name__,
+    template_folder="templates",       # assuming templates/ is in root
+    static_folder="static",            # assuming static/ is in root
+    static_url_path="/static"
+)
+
+app.register_blueprint(resume_bp)
 
 @app.route("/")
 def home():
     return render_template("index.html")
-
-
-app = Flask(__name__, static_folder="client/build", static_url_path="")
-app.register_blueprint(resume_bp)
-
-app = Flask(__name__)
-app.register_blueprint(resume_bp)
-
