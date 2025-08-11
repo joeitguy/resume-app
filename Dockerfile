@@ -10,5 +10,5 @@ COPY . .
 
 RUN python manage.py collectstatic --noinput
 
-CMD gunicorn app:app --bind 0.0.0.0:8000
+CMD gunicorn app:app --bind 0.0.0.0 
 
