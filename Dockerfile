@@ -10,4 +10,5 @@ COPY . .
 
 RUN python manage.py collectstatic --noinput
 
-CMD gunicorn resume_app.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn app:app --bind 0.0.0.0:8000
+
